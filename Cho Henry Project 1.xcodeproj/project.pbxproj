@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FAAAEDE2ADD478200799233 /* Cho_Henry_Project_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAAEDD2ADD478200799233 /* Cho_Henry_Project_1App.swift */; };
+		0FAAAEE02ADD478200799233 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAAEDF2ADD478200799233 /* ContentView.swift */; };
+		0FAAAEE22ADD478200799233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAAAEE12ADD478200799233 /* Assets.xcassets */; };
+		0FAAAEE52ADD478200799233 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAAAEE42ADD478200799233 /* Preview Assets.xcassets */; };
+		0FAAAEEF2ADD478200799233 /* Cho_Henry_Project_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAAEEE2ADD478200799233 /* Cho_Henry_Project_1Tests.swift */; };
+		0FAAAEF92ADD478200799233 /* Cho_Henry_Project_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAAEF82ADD478200799233 /* Cho_Henry_Project_1UITests.swift */; };
+		0FAAAEFB2ADD478200799233 /* Cho_Henry_Project_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAAAEFA2ADD478200799233 /* Cho_Henry_Project_1UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FAAAEEB2ADD478200799233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FAAAED22ADD478200799233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FAAAED92ADD478200799233;
+			remoteInfo = "Cho Henry Project 1";
+		};
+		0FAAAEF52ADD478200799233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FAAAED22ADD478200799233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FAAAED92ADD478200799233;
+			remoteInfo = "Cho Henry Project 1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FAAAEDA2ADD478200799233 /* Cho Henry Project 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cho Henry Project 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FAAAEDD2ADD478200799233 /* Cho_Henry_Project_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cho_Henry_Project_1App.swift; sourceTree = "<group>"; };
+		0FAAAEDF2ADD478200799233 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FAAAEE12ADD478200799233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FAAAEE42ADD478200799233 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FAAAEEA2ADD478200799233 /* Cho Henry Project 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cho Henry Project 1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FAAAEEE2ADD478200799233 /* Cho_Henry_Project_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cho_Henry_Project_1Tests.swift; sourceTree = "<group>"; };
+		0FAAAEF42ADD478200799233 /* Cho Henry Project 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cho Henry Project 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FAAAEF82ADD478200799233 /* Cho_Henry_Project_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cho_Henry_Project_1UITests.swift; sourceTree = "<group>"; };
+		0FAAAEFA2ADD478200799233 /* Cho_Henry_Project_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cho_Henry_Project_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FAAAED72ADD478200799233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEE72ADD478200799233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEF12ADD478200799233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FAAAED12ADD478200799233 = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEDC2ADD478200799233 /* Cho Henry Project 1 */,
+				0FAAAEED2ADD478200799233 /* Cho Henry Project 1Tests */,
+				0FAAAEF72ADD478200799233 /* Cho Henry Project 1UITests */,
+				0FAAAEDB2ADD478200799233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FAAAEDB2ADD478200799233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEDA2ADD478200799233 /* Cho Henry Project 1.app */,
+				0FAAAEEA2ADD478200799233 /* Cho Henry Project 1Tests.xctest */,
+				0FAAAEF42ADD478200799233 /* Cho Henry Project 1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FAAAEDC2ADD478200799233 /* Cho Henry Project 1 */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEDD2ADD478200799233 /* Cho_Henry_Project_1App.swift */,
+				0FAAAEDF2ADD478200799233 /* ContentView.swift */,
+				0FAAAEE12ADD478200799233 /* Assets.xcassets */,
+				0FAAAEE32ADD478200799233 /* Preview Content */,
+			);
+			path = "Cho Henry Project 1";
+			sourceTree = "<group>";
+		};
+		0FAAAEE32ADD478200799233 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEE42ADD478200799233 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FAAAEED2ADD478200799233 /* Cho Henry Project 1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEEE2ADD478200799233 /* Cho_Henry_Project_1Tests.swift */,
+			);
+			path = "Cho Henry Project 1Tests";
+			sourceTree = "<group>";
+		};
+		0FAAAEF72ADD478200799233 /* Cho Henry Project 1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0FAAAEF82ADD478200799233 /* Cho_Henry_Project_1UITests.swift */,
+				0FAAAEFA2ADD478200799233 /* Cho_Henry_Project_1UITestsLaunchTests.swift */,
+			);
+			path = "Cho Henry Project 1UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FAAAED92ADD478200799233 /* Cho Henry Project 1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAAAEFE2ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1" */;
+			buildPhases = (
+				0FAAAED62ADD478200799233 /* Sources */,
+				0FAAAED72ADD478200799233 /* Frameworks */,
+				0FAAAED82ADD478200799233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cho Henry Project 1";
+			productName = "Cho Henry Project 1";
+			productReference = 0FAAAEDA2ADD478200799233 /* Cho Henry Project 1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FAAAEE92ADD478200799233 /* Cho Henry Project 1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAAAF012ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1Tests" */;
+			buildPhases = (
+				0FAAAEE62ADD478200799233 /* Sources */,
+				0FAAAEE72ADD478200799233 /* Frameworks */,
+				0FAAAEE82ADD478200799233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FAAAEEC2ADD478200799233 /* PBXTargetDependency */,
+			);
+			name = "Cho Henry Project 1Tests";
+			productName = "Cho Henry Project 1Tests";
+			productReference = 0FAAAEEA2ADD478200799233 /* Cho Henry Project 1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0FAAAEF32ADD478200799233 /* Cho Henry Project 1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAAAF042ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1UITests" */;
+			buildPhases = (
+				0FAAAEF02ADD478200799233 /* Sources */,
+				0FAAAEF12ADD478200799233 /* Frameworks */,
+				0FAAAEF22ADD478200799233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FAAAEF62ADD478200799233 /* PBXTargetDependency */,
+			);
+			name = "Cho Henry Project 1UITests";
+			productName = "Cho Henry Project 1UITests";
+			productReference = 0FAAAEF42ADD478200799233 /* Cho Henry Project 1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FAAAED22ADD478200799233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0FAAAED92ADD478200799233 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					0FAAAEE92ADD478200799233 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0FAAAED92ADD478200799233;
+					};
+					0FAAAEF32ADD478200799233 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0FAAAED92ADD478200799233;
+					};
+				};
+			};
+			buildConfigurationList = 0FAAAED52ADD478200799233 /* Build configuration list for PBXProject "Cho Henry Project 1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FAAAED12ADD478200799233;
+			productRefGroup = 0FAAAEDB2ADD478200799233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FAAAED92ADD478200799233 /* Cho Henry Project 1 */,
+				0FAAAEE92ADD478200799233 /* Cho Henry Project 1Tests */,
+				0FAAAEF32ADD478200799233 /* Cho Henry Project 1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FAAAED82ADD478200799233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAAAEE52ADD478200799233 /* Preview Assets.xcassets in Resources */,
+				0FAAAEE22ADD478200799233 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEE82ADD478200799233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEF22ADD478200799233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FAAAED62ADD478200799233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAAAEE02ADD478200799233 /* ContentView.swift in Sources */,
+				0FAAAEDE2ADD478200799233 /* Cho_Henry_Project_1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEE62ADD478200799233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAAAEEF2ADD478200799233 /* Cho_Henry_Project_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAAAEF02ADD478200799233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAAAEFB2ADD478200799233 /* Cho_Henry_Project_1UITestsLaunchTests.swift in Sources */,
+				0FAAAEF92ADD478200799233 /* Cho_Henry_Project_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FAAAEEC2ADD478200799233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FAAAED92ADD478200799233 /* Cho Henry Project 1 */;
+			targetProxy = 0FAAAEEB2ADD478200799233 /* PBXContainerItemProxy */;
+		};
+		0FAAAEF62ADD478200799233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FAAAED92ADD478200799233 /* Cho Henry Project 1 */;
+			targetProxy = 0FAAAEF52ADD478200799233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FAAAEFC2ADD478200799233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FAAAEFD2ADD478200799233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FAAAEFF2ADD478200799233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cho Henry Project 1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FAAAF002ADD478200799233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cho Henry Project 1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0FAAAF022ADD478200799233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cho Henry Project 1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cho Henry Project 1";
+			};
+			name = Debug;
+		};
+		0FAAAF032ADD478200799233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cho Henry Project 1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cho Henry Project 1";
+			};
+			name = Release;
+		};
+		0FAAAF052ADD478200799233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cho Henry Project 1";
+			};
+			name = Debug;
+		};
+		0FAAAF062ADD478200799233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.henrycho.Cho-Henry-Project-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cho Henry Project 1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FAAAED52ADD478200799233 /* Build configuration list for PBXProject "Cho Henry Project 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAAAEFC2ADD478200799233 /* Debug */,
+				0FAAAEFD2ADD478200799233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FAAAEFE2ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAAAEFF2ADD478200799233 /* Debug */,
+				0FAAAF002ADD478200799233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FAAAF012ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAAAF022ADD478200799233 /* Debug */,
+				0FAAAF032ADD478200799233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FAAAF042ADD478200799233 /* Build configuration list for PBXNativeTarget "Cho Henry Project 1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAAAF052ADD478200799233 /* Debug */,
+				0FAAAF062ADD478200799233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FAAAED22ADD478200799233 /* Project object */;
+}
