@@ -24,7 +24,7 @@ struct Oval: Shape {
         
         return p
     }
-}
+}  
 
 #Preview
 {
