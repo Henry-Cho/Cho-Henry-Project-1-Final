@@ -8,25 +8,61 @@
 import SwiftUI
 
 struct Oval: Shape {
+
     func path(in rect: CGRect) -> Path {
-        let start = CGPoint(x: rect.minX, y: rect.maxY)
-        let firstPoint = CGPoint(x: rect.minX, y: rect.minY)    
-        let secondPoint = CGPoint(x: rect.maxX, y: rect.minY)
-        let end = CGPoint(x: rect.maxX, y: rect.maxY)
+        let radius = min(rect.width / 2, rect.height / 2)
+        var path = Path()
         
-        var p = Path()
-        p.move(to: start)
-        p.addLine(to: firstPoint)
-        p.addArc(center: CGPoint(x: rect.midX, y: rect.minY), radius: rect.width / 2, startAngle: Angle(degrees: 90), endAngle: Angle(degrees: 180), clockwise: true)
-        p.addLine(to: secondPoint)
-        p.addArc(center: CGPoint(x: rect.midX, y: rect.maxY), radius: rect.width / 2, startAngle: Angle(degrees: 180), endAngle: Angle(degrees: 360), clockwise: true)
-        p.addLine(to: end)
+        path.move(to: CGPoint(x: rect.minX, y: rect.midY / 2))
         
-        return p
+        path.addArc(
+            center: CGPoint(x: rect.midX, y: rect.midY / 2),
+            radius: radius,
+            startAngle: Angle(degrees: 180),
+            endAngle: Angle(degrees: 0),
+            clockwise: false
+        )
+        
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY * 0.75))
+    
+        path.addArc(
+            center: CGPoint(x: rect.midX, y: rect.maxY * 0.75),
+            radius: radius,
+            startAngle: Angle(degrees: 0),
+            endAngle: Angle(degrees: 180),
+            clockwise: false
+        )
+        
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.midY / 2))
+
+        return path
     }
-}  
+}
+
 
 #Preview
 {
-    Oval().aspectRatio(1/3, contentMode: .fit)
+    VStack {
+        ForEach(0..<3) { _ in
+            ZStack {
+                GeometryReader { geometry in
+                    Oval()
+                        .scale(2.0)
+                        .stroke(lineWidth: 8)
+                }
+                GeometryReader { geometry in
+                    Oval()
+                        .scale(2.0)
+                        .opacity(0.25)
+                }
+                    
+            }
+            .rotationEffect(Angle(degrees: 90))
+            .aspectRatio(1/3, contentMode: .fit)
+            
+        }
+    }
+    .foregroundColor(.purple)
+    .padding(100)
+    .background()
 }

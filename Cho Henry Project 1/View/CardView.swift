@@ -14,7 +14,7 @@ struct CardView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack(alignment: .listRowSeparatorLeading) {
                 Spacer(minLength: 0)
                 ForEach(0..<card.number.rawValue, id: \.self) { _ in
                     ZStack {
@@ -85,8 +85,10 @@ struct CardView: View {
             }
                 
         case .oval:
-            Capsule()
-                .stroke(lineWidth: size.height * 0.02)
+            GeometryReader { geometry in
+                Capsule()
+                    .stroke(lineWidth: size.height * 0.02)
+            }
         }
     }
 
@@ -105,8 +107,10 @@ struct CardView: View {
             }
             
         case .oval:
-            Capsule()
-                .fill(cardColor)
+            GeometryReader { geometry in
+                Capsule()
+                    .fill(cardColor)
+            }
         }
     }
 }
@@ -127,7 +131,6 @@ extension CardView {
 }
 
 #Preview {
-    CardView(card: Card(color: .purple, number: .three, shading: .striped, shape: .squiggle, state: .unselected))
+    CardView(card: Card(color: .purple, number: .three, shading: .striped, shape: .oval, state: .unselected))
         .padding(10)
-        .aspectRatio(5/7, contentMode: .fit)
 }

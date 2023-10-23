@@ -28,7 +28,7 @@ struct Diamond: Shape {
 
 #Preview {
     HStack {
-        ForEach(0..<3) { _ in
+        ForEach(0..<1) { _ in
             ZStack {
                 Diamond().stroke(lineWidth: 8)
                 Diamond().opacity(0.25)
@@ -39,5 +39,5 @@ struct Diamond: Shape {
     }
     .foregroundColor(.purple)
     .padding()
-    .rotationEffect(Angle(degrees: 90))
+//    .rotationEffect(Angle(degrees: 90))
 }
