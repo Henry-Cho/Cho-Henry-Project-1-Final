@@ -21,26 +21,22 @@ struct SetGameView: View {
                                 .onTapGesture {
                                         setGame.choose(card)
                                 }
-                                .transition(AnyTransition.asymmetric(
-                                    insertion: .offset(randomOnscreenLocation),
-                                    removal: .offset(randomOffscreenLocation)
-                                ))
-
+                                .transition(AnyTransition.offset(randomOnscreenLocation)
+                                )
                         }
                     }
                     Spacer()
                     bottomMenu
                 }
-                
                 .padding()
             
         }
         .onAppear {
             setGame.initialDealCards()
         }
-       
     }
     
+    // dynamic columns
     private func columns(for size: CGSize) -> [GridItem] {
         let minColumns = 2
         var columns = minColumns
@@ -61,15 +57,8 @@ struct SetGameView: View {
         return Array(repeating: GridItem(.flexible()), count: columns)
     }
     
+    // fly in & away
     private var randomOnscreenLocation: CGSize {
-        let radius = max(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 1.5
-        let angle = Double.random(in: 0..<360)
-        let x = radius * cos(angle)
-        let y = radius * sin(angle)
-        return CGSize(width: x, height: y)
-    }
-    
-    private var randomOffscreenLocation: CGSize {
         let radius = max(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 1.5
         let angle = Double.random(in: 0..<360)
         let x = radius * cos(angle)

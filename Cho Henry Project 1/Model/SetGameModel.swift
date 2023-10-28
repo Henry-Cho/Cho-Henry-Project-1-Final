@@ -57,6 +57,7 @@ struct SetGameModel {
         score += value
     }
     
+    // handel dealing when appending or inserting when removing cards
     mutating func dealCard(insertAt index: Int? = nil) {
         guard deck.count > 0 else { return }
 

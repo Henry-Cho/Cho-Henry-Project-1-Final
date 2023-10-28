@@ -14,6 +14,10 @@ extension Array where Element == Card {
         case none
     }
 
+    // dictionary -> set
+    // if only one element -> the selected cards's featureKeyPath (shape, shading, number, etc) all the same
+    // if the set has the same size with the original self -> all different
+    // if not none
     func allCompare<T: Hashable>(_ featureKeyPath: KeyPath<Element, T>) -> ComparisonResult {
             let featureValues = self.map { $0[keyPath: featureKeyPath] }
             let uniqueValues = Set(featureValues)

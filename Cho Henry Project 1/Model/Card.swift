@@ -16,6 +16,8 @@ struct Card: Identifiable, Equatable {
     var state: State = .unselected
 }
 
+// case iterable provides a collection of all of its values.
+// I use .allCase with this type
 enum CardColor: CaseIterable {
     case red, green, purple
 }

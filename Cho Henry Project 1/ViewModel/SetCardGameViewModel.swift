@@ -22,6 +22,7 @@ import SwiftUI
         game.score
     }
     
+    // do not allow dealing cards if this returns true
     var dealMoreCardsDisabled: Bool {
         if game.deck.count == 0 && game.cardsFilter(.matched).count != 0 {
             return false
@@ -77,13 +78,14 @@ import SwiftUI
         }
     }
 
-    
+    // deal 12 cards after loading the app
     func initialDealCards() {
         withAnimation(.easeInOut(duration: CardConstants.animationDuration)) {
             game.dealTwelveCards()
         }
     }
     
+    // start a new game
     func newGame() {
         withAnimation(.easeInOut(duration: CardConstants.animationDuration)) {
             game = SetGameModel()
@@ -91,6 +93,7 @@ import SwiftUI
         }
     }
     
+    // deal just one card
     func dealCard() {
         game.dealCard()
     }
