@@ -1,43 +1,49 @@
 //
 //  Diamond.swift
-//  Cho Henry Project 1
+//  Practice SetGame
 //
-//  Created by Henry Cho on 10/16/23.
+//  Created by Henry Cho on 10/24/23.
 //
 
 import SwiftUI
 
+struct DiamondView: View {
+    var body: some View {
+        HStack {
+            ForEach(0..<3) { _ in
+                ZStack {
+                    Diamond()
+                        .opacity(0.25)
+                    Diamond().stroke(lineWidth: 8)
+                }
+                .padding()
+                .aspectRatio(1/2, contentMode: .fit)
+            }
+        }
+        .rotationEffect(Angle(degrees: 90))
+        .foregroundStyle(.purple)
+        .padding()
+    }
+}
+
+
 struct Diamond: Shape {
     func path(in rect: CGRect) -> Path {
-        let start = CGPoint(x: rect.minX, y: rect.midY)
-        let firstPoint = CGPoint(x: rect.midX, y: rect.minY)
-        let secondPoint = CGPoint(x: rect.maxX, y: rect.midY)
-        let end = CGPoint(x: rect.midX, y: rect.maxY)
+        var path = Path()
+
+        let width = rect.size.width
+        let height = rect.size.height
         
-        var p = Path()
-        p.move(to: start)
-        p.addLine(to: firstPoint)
-        p.addLine(to: secondPoint)
-        p.addLine(to: end)
-        p.addLine(to: start)
-        p.addLine(to: firstPoint)
+        path.move(to: CGPoint(x: width * 0.5, y: 0)) // Top point
+                path.addLine(to: CGPoint(x: width, y: height * 0.5)) // Right point
+                path.addLine(to: CGPoint(x: width * 0.5, y: height)) // Bottom point
+                path.addLine(to: CGPoint(x: 0, y: height * 0.5)) // Left point
+                path.closeSubpath()
         
-        return p
+        return path
     }
 }
 
 #Preview {
-    HStack {
-        ForEach(0..<1) { _ in
-            ZStack {
-                Diamond().stroke(lineWidth: 8)
-                Diamond().opacity(0.25)
-            }
-            .aspectRatio(1/3, contentMode: .fit)
-            .padding(.trailing)
-        }
-    }
-    .foregroundColor(.purple)
-    .padding()
-//    .rotationEffect(Angle(degrees: 90))
+    DiamondView()
 }

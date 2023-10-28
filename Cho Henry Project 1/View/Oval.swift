@@ -1,11 +1,32 @@
 //
 //  Oval.swift
-//  Cho Henry Project 1
+//  Practice SetGame
 //
-//  Created by Henry Cho on 10/16/23.
+//  Created by Henry Cho on 10/24/23.
 //
 
 import SwiftUI
+
+struct OvalView: View {
+    var body: some View {
+        HStack {
+            ForEach(0..<1) { _ in
+                ZStack {
+                    Oval()
+                        .opacity(0.25)
+                    Oval().stroke(lineWidth: 8)
+                }
+                .padding(120)
+                .aspectRatio(1/2, contentMode: .fit)
+            }
+            .rotationEffect(Angle(degrees: 180))
+        }
+        .rotationEffect(Angle(degrees: 90))
+        .foregroundStyle(.purple)
+        .padding()
+    }
+}
+
 
 struct Oval: Shape {
 
@@ -40,29 +61,7 @@ struct Oval: Shape {
 }
 
 
-#Preview
-{
-    VStack {
-        ForEach(0..<3) { _ in
-            ZStack {
-                GeometryReader { geometry in
-                    Oval()
-                        .scale(2.0)
-                        .stroke(lineWidth: 8)
-                }
-                GeometryReader { geometry in
-                    Oval()
-                        .scale(2.0)
-                        .opacity(0.25)
-                }
-                    
-            }
-            .rotationEffect(Angle(degrees: 90))
-            .aspectRatio(1/3, contentMode: .fit)
-            
-        }
-    }
-    .foregroundColor(.purple)
-    .padding(100)
-    .background()
+
+#Preview {
+    OvalView()
 }

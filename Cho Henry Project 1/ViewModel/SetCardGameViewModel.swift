@@ -1,105 +1,99 @@
 //
-//  SetCardGameViewModel.swift
-//  Cho Henry Project 1
+//  SetGameViewModel.swift
+//  Practice SetGame
 //
-//  Created by Henry Cho on 10/16/23.
+//  Created by Henry Cho on 10/25/23.
 //
 
 import SwiftUI
 
-@Observable class SetCardGameViewModel {
-    private var model = SetCardGame()
+@Observable class SetGameViewModel {
+    private var game = SetGameModel()
     
     var deck: [Card] {
-        model.deck
+        game.deck
     }
-
+    
     var cardsOnScreen: [Card] {
-        model.cardsOnScreen
+        game.cardsOnScreen
     }
-
+    
     var score: Int {
-        model.score
+        game.score
     }
-
+    
     var dealMoreCardsDisabled: Bool {
-        if model.deck.count == 0 && model.cardsWhich(.matched).count != 0 {
+        if game.deck.count == 0 && game.cardsFilter(.matched).count != 0 {
             return false
-        } else if model.deck.count == 0 {
+        } else if game.deck.count == 0 {
             return true
         } else {
             return false
         }
     }
-
-    func newGame() {
-        withAnimation(.easeInOut(duration: Constants.animationDuration)) {
-            model = SetCardGame()
-        }
-        initialDealCard()
-    }
-
-    // MARK: Intents
-
+    
     func choose(_ card: Card) {
-        withAnimation(.easeInOut(duration: Constants.animationDuration)) {
+        withAnimation(.easeInOut(duration: CardConstants.animationDuration)) {
             // Remove matched cards and deal new cards
-            let matchedCards = model.cardsWhich(.matched)
+            let matchedCards = game.cardsFilter(.matched)
 
             if matchedCards.count > 0 {
                 for (index, card) in matchedCards.enumerated() {
-                    withAnimation(model.deck.count > 0 ? .linear.delay(Double(index) * 0.1) : .default) {
-                        let cardIndex = model.removeCard(card)
-                        model.dealCard(insertAt: cardIndex)
+                    withAnimation(game.deck.count > 0 ? .linear.delay(Double(index) * 0.1) : .default) {
+                        let cardIndex = game.removeCard(card)
+                        game.dealCard(insertAt: cardIndex)
                     }
                 }
                 return
             }
             
-            model.choose(card)
+            game.choose(card)
 
             // Unselect unmatched cards
-            let unmatchedCards = model.cardsWhich(.unmatched)
+            let unmatchedCards = game.cardsFilter(.unmatched)
 
             if unmatchedCards.count > 0 {
                 for card in unmatchedCards {
-                    model.updateCardState(card, with: .unselected)
+                    game.updateCardState(card, with: .unselected)
                 }
             }
 
             // Check selected cards are matching or not
-            let selectedCards = model.cardsWhich(.selected)
+            let selectedCards = game.cardsFilter(.selected)
 
             if selectedCards.count == 3 {
-                let isValidSet = model.isSet(selectedCards)
+                let isValidSet = game.isSet(selectedCards)
 
                 for card in selectedCards {
                     if isValidSet {
-                        model.updateCardState(card, with: .matched)
+                        game.updateCardState(card, with: .matched)
                     } else {
-                        model.updateCardState(card, with: .unmatched)
+                        game.updateCardState(card, with: .unmatched)
                     }
                 }
 
-                model.updateScore(with: isValidSet ? 1 : -1)
+                game.updateScore(with: isValidSet ? 1 : -1)
             }
         }
     }
 
-    func dealCard(insertAt: Int? = nil) {
-        withAnimation(.easeInOut(duration: Constants.animationDuration)) {
-            model.dealCard(insertAt: insertAt)
+    
+    func initialDealCards() {
+        withAnimation(.easeInOut(duration: CardConstants.animationDuration)) {
+            game.dealTwelveCards()
         }
     }
     
-    func initialDealCard() {
-        withAnimation(.easeInOut(duration: Constants.animationDuration)) {
-            model.dealTwelveCards()
+    func newGame() {
+        withAnimation(.easeInOut(duration: CardConstants.animationDuration)) {
+            game = SetGameModel()
+            game.dealTwelveCards()
         }
     }
     
-    // MARK: - Constants
-    private struct Constants {
-        static let animationDuration = 0.5
+    func dealCard() {
+        game.dealCard()
     }
+    
+    
 }

@@ -1,8 +1,8 @@
 //
 //  Array+AllCompare.swift
-//  Cho Henry Project 1
+//  Practice SetGame
 //
-//  Created by Henry Cho on 10/16/23.
+//  Created by Henry Cho on 10/24/23.
 //
 
 import Foundation

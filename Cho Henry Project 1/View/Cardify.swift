@@ -1,12 +1,4 @@
-//
-//  Cardify.swift
-//  Cho Henry Project 1
-//
-//  Created by Henry Cho on 10/16/23.
-//
-
 import SwiftUI
-
 
 extension View {
     func cardify(isFaceUp: Bool) -> some View {
@@ -22,7 +14,7 @@ struct Cardify: ViewModifier {
     func body(content: Content) -> some View {
         GeometryReader { geometry in
             ZStack {
-                let shape = RoundedRectangle(cornerRadius: 10)
+                let shape = RoundedRectangle(cornerRadius: cornerRadius(for: geometry.size))
 
                 if isFaceUp {
                     shape
@@ -39,5 +31,10 @@ struct Cardify: ViewModifier {
                 content.opacity(isFaceUp ? 1 : 0)
             }
         }
+    }
+    
+    // MARK: - Drawing Constants
+    private func cornerRadius(for size: CGSize) -> Double {
+        min(size.width, size.height) * 0.08
     }
 }
